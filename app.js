@@ -134,7 +134,13 @@ function nextQuestion(){
         return;
     }
 
-    showQuestion();
+let percent =
+((current)/questions.length)*100;
+
+document.getElementById(
+"progressBar"
+).style.width =
+percent + "%";
 }
 
 function evaluate(){
