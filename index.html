@@ -1,177 +1,233 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSIR-NET Mathematical Sciences Mock Portal</title>
 
-<meta name="viewport"
-content="width=device-width,initial-scale=1">
-
-<title>
-CSIR-NET Mathematics Portal
-</title>
-
-<link rel="stylesheet"
-href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
 
-<div class="creator-bar">
-
-    <span>
-        Created by Indranil Ghosh
-    </span>
-
-    <span>
-        Email: your-email@example.com
-    </span>
-
-</div>
-
-<header>
-
-<h1>
-🎓 CSIR-NET Mathematics Portal
-</h1>
-
-<p>
-Mock Tests • Previous Year Papers • Topic Tests
-</p>
-
+<header class="top-header">
+    <div class="logo-area">
+        <h1>CSIR-NET Mathematical Sciences</h1>
+        <p>NTA Style Mock Test Portal</p>
+    </div>
 </header>
 
-<div class="container">
+<main class="dashboard">
 
-    <section>
+    <!-- Mock Tests -->
+    <section class="category">
+        <h2>Mock Tests</h2>
 
-        <h2>
-        Full Length Mock Tests
-        </h2>
+        <div class="card-grid">
 
-        <div class="grid">
+            <div class="test-card">
+                <h3>Mock Test 1</h3>
+                <p>Questions: 75</p>
+                <p>Duration: 180 Minutes</p>
+                <p>Marks: 200</p>
 
-            <button
-            onclick="loadMock('mock1')">
-            Mock Test 1
-            </button>
+                <a href="exam.html?test=mocks/mock1.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
 
-            <button
-            onclick="loadMock('mock2')">
-            Mock Test 2
-            </button>
+            <div class="test-card">
+                <h3>Mock Test 2</h3>
+                <p>Questions: 75</p>
+                <p>Duration: 180 Minutes</p>
+                <p>Marks: 200</p>
 
-            <button
-            onclick="loadMock('mock3')">
-            Mock Test 3
-            </button>
+                <a href="exam.html?test=mocks/mock2.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
 
-            <button
-            onclick="loadMock('mock4')">
-            Mock Test 4
-            </button>
+            <div class="test-card">
+                <h3>Mock Test 3</h3>
+                <p>Questions: 75</p>
+                <p>Duration: 180 Minutes</p>
+                <p>Marks: 200</p>
 
-            <button
-            onclick="loadMock('mock5')">
-            Mock Test 5
-            </button>
-
-            <button
-            onclick="loadMock('mock6')">
-            Mock Test 6
-            </button>
-
-        </div>
-
-    </section>
-
-    <section>
-
-        <h2>
-        Previous Year Papers
-        </h2>
-
-        <div class="grid">
-
-            <button
-            onclick="loadMock('csir2025')">
-            CSIR NET 2025
-            </button>
-
-            <button
-            onclick="loadMock('csir2024')">
-            CSIR NET 2024
-            </button>
-
-            <button
-            onclick="loadMock('csir2023')">
-            CSIR NET 2023
-            </button>
+                <a href="exam.html?test=mocks/mock3.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
 
         </div>
-
     </section>
 
-    <section>
 
-        <h2>
-        Topic Tests
-        </h2>
+    <!-- Previous Year -->
+    <section class="category">
+        <h2>Previous Year Papers</h2>
 
-        <div class="grid">
+        <div class="card-grid">
 
-            <button
-            onclick="loadMock('linear_algebra')">
-            Linear Algebra
-            </button>
+            <div class="test-card">
+                <h3>CSIR NET 2025</h3>
+                <p>Questions: 75</p>
+                <p>Duration: 180 Minutes</p>
+                <p>Marks: 200</p>
 
-            <button
-            onclick="loadMock('real_analysis')">
-            Real Analysis
-            </button>
+                <a href="exam.html?test=mocks/csir2025.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
 
-            <button
-            onclick="loadMock('functional_analysis')">
-            Functional Analysis
-            </button>
+            <div class="test-card">
+                <h3>CSIR NET 2024</h3>
+                <p>Questions: 75</p>
+                <p>Duration: 180 Minutes</p>
+                <p>Marks: 200</p>
 
-            <button
-            onclick="loadMock('algebra')">
-            Abstract Algebra
-            </button>
+                <a href="exam.html?test=mocks/csir2024.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
+
+            <div class="test-card">
+                <h3>CSIR NET 2023</h3>
+                <p>Questions: 75</p>
+                <p>Duration: 180 Minutes</p>
+                <p>Marks: 200</p>
+
+                <a href="exam.html?test=mocks/csir2023.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
 
         </div>
-
     </section>
 
-    <section>
 
-        <h2>
-        Special Tests
-        </h2>
+    <!-- Topic Wise -->
+    <section class="category">
+        <h2>Topic Wise Tests</h2>
 
-        <div class="grid">
+        <div class="card-grid">
 
-            <button
-            onclick="loadMock('full_length_1')">
-            Full Length Test 1
-            </button>
+            <div class="test-card">
+                <h3>Linear Algebra</h3>
+                <p>Questions: 25</p>
+                <p>Duration: 60 Minutes</p>
+                <p>Marks: 100</p>
 
-            <button
-            onclick="loadMock('full_length_2')">
-            Full Length Test 2
-            </button>
+                <a href="exam.html?test=mocks/linear_algebra.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
+
+            <div class="test-card">
+                <h3>Real Analysis</h3>
+                <p>Questions: 25</p>
+                <p>Duration: 60 Minutes</p>
+                <p>Marks: 100</p>
+
+                <a href="exam.html?test=mocks/real_analysis.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
+
+            <div class="test-card">
+                <h3>Functional Analysis</h3>
+                <p>Questions: 25</p>
+                <p>Duration: 60 Minutes</p>
+                <p>Marks: 100</p>
+
+                <a href="exam.html?test=mocks/functional_analysis.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
+
+            <div class="test-card">
+                <h3>Algebra</h3>
+                <p>Questions: 25</p>
+                <p>Duration: 60 Minutes</p>
+                <p>Marks: 100</p>
+
+                <a href="exam.html?test=mocks/algebra.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
+
+            <div class="test-card">
+                <h3>Complex Analysis</h3>
+                <p>Questions: 25</p>
+                <p>Duration: 60 Minutes</p>
+                <p>Marks: 100</p>
+
+                <a href="exam.html?test=mocks/complex_analysis.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
+
+            <div class="test-card">
+                <h3>Topology</h3>
+                <p>Questions: 25</p>
+                <p>Duration: 60 Minutes</p>
+                <p>Marks: 100</p>
+
+                <a href="exam.html?test=mocks/topology.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
+
+            <div class="test-card">
+                <h3>Differential Geometry</h3>
+                <p>Questions: 25</p>
+                <p>Duration: 60 Minutes</p>
+                <p>Marks: 100</p>
+
+                <a href="exam.html?test=mocks/differential_geometry.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
 
         </div>
-
     </section>
 
-</div>
 
-<script src="app.js"></script>
+    <!-- Full Length -->
+    <section class="category">
+        <h2>Full Length Tests</h2>
+
+        <div class="card-grid">
+
+            <div class="test-card">
+                <h3>Full Length Test 1</h3>
+                <p>Questions: 75</p>
+                <p>Duration: 180 Minutes</p>
+                <p>Marks: 200</p>
+
+                <a href="exam.html?test=mocks/full_length_1.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
+
+            <div class="test-card">
+                <h3>Full Length Test 2</h3>
+                <p>Questions: 75</p>
+                <p>Duration: 180 Minutes</p>
+                <p>Marks: 200</p>
+
+                <a href="exam.html?test=mocks/full_length_2.json">
+                    <button>Start Test</button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>CSIR-NET Mathematical Sciences Practice Portal</p>
+</footer>
 
 </body>
-
 </html>
