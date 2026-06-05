@@ -1,0 +1,160 @@
+{
+  "test_name": "Linear Algebra Practice Test",
+  "duration_minutes": 60,
+  "total_marks": 32,
+
+  "sections": [
+    {
+      "name": "Part A",
+      "questions": [
+
+        {
+          "id": 1,
+          "type": "single",
+          "text": "If \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\), then \\(\\det(A)\\) equals",
+          "options": [
+            "-2",
+            "2",
+            "5",
+            "10"
+          ],
+          "correct_answer": 0,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+
+        {
+          "id": 2,
+          "type": "single",
+          "text": "The dimension of the solution space of the system \\(Ax=0\\), where \\(A\\) is a \\(4\\times6\\) matrix of rank 4, is",
+          "options": [
+            "0",
+            "2",
+            "4",
+            "6"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+
+        {
+          "id": 3,
+          "type": "nat",
+          "text": "Let \\(I\\) denote the identity matrix of order 3. Compute \\(\\operatorname{trace}(I)\\).",
+          "correct_answer": 3,
+          "positive_marks": 2,
+          "negative_marks": 0
+        }
+
+      ]
+    },
+
+    {
+      "name": "Part B",
+      "questions": [
+
+        {
+          "id": 4,
+          "type": "single",
+          "text": "Let \\(T:\\mathbb{R}^3\\to\\mathbb{R}^3\\) be represented by a diagonal matrix with entries \\(1,2,3\\). The eigenvalues are",
+          "options": [
+            "1,2,3",
+            "1",
+            "2,3",
+            "None"
+          ],
+          "correct_answer": 0,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+
+        {
+          "id": 5,
+          "type": "multiple",
+          "text": "Select all matrices that are invertible.",
+          "options": [
+            "\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}2&0\\\\0&3\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)"
+          ],
+          "correct_answer": [0,2],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+
+        {
+          "id": 6,
+          "type": "single",
+          "text": "The characteristic polynomial of \\(\\begin{pmatrix}2&0\\\\0&3\\end{pmatrix}\\) is",
+          "options": [
+            "\\((\\lambda-2)(\\lambda-3)\\)",
+            "\\((\\lambda+2)(\\lambda+3)\\)",
+            "\\(\\lambda^2+5\\lambda+6\\)",
+            "\\(\\lambda^2-6\\)"
+          ],
+          "correct_answer": 0,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+
+        {
+          "id": 7,
+          "type": "nat",
+          "text": "If a matrix has eigenvalues 1, 2 and 3, compute its trace.",
+          "correct_answer": 6,
+          "positive_marks": 3,
+          "negative_marks": 0
+        }
+
+      ]
+    },
+
+    {
+      "name": "Part C",
+      "questions": [
+
+        {
+          "id": 8,
+          "type": "multiple",
+          "text": "Let \\(V\\) be an inner product space. Select all true statements.",
+          "options": [
+            "Every orthonormal set is linearly independent.",
+            "Every linearly independent set is orthonormal.",
+            "Orthogonal vectors are linearly independent.",
+            "Gram-Schmidt produces an orthonormal set."
+          ],
+          "correct_answer": [0,2,3],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+
+        {
+          "id": 9,
+          "type": "single",
+          "text": "The dimension of the space of all \\(3\\times3\\) real symmetric matrices is",
+          "options": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+
+        {
+          "id": 10,
+          "type": "nat",
+          "text": "Let \\(A=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\). Compute \\(\\|A\\|_F^2\\), where \\(\\|A\\|_F\\) is the Frobenius norm.",
+          "correct_answer": 2,
+          "positive_marks": 5,
+          "negative_marks": 0
+        }
+
+      ]
+    }
+  ]
+}
