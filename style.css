@@ -1,201 +1,130 @@
-:root{
-    --primary:#4f46e5;
-    --secondary:#6366f1;
-    --success:#10b981;
-    --danger:#ef4444;
-    --bg:#f3f6fb;
-    --card:#ffffff;
-    --text:#1f2937;
-}
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(
-        135deg,
-        #eef2ff,
-        #dbeafe
-    );
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
+
+font-family:
+'Segoe UI',sans-serif;
+
+background:
+linear-gradient(
+135deg,
+#eef2ff,
+#dbeafe
+);
+
+min-height:100vh;
+}
+
+.creator-bar{
+
+background:#111827;
+
+color:white;
+
+padding:12px;
+
+display:flex;
+
+justify-content:space-between;
+}
+
+header{
+
+background:
+linear-gradient(
+135deg,
+#1e3a8a,
+#2563eb
+);
+
+color:white;
+
+padding:40px;
+
+text-align:center;
+
+margin-bottom:30px;
 }
 
 .container{
-    width:100%;
-    max-width:900px;
-    background:var(--card);
-    border-radius:20px;
-    padding:35px;
-    box-shadow:
-    0 20px 40px rgba(0,0,0,.1);
+
+max-width:1200px;
+
+margin:auto;
+
+padding:20px;
 }
 
-h1{
-    text-align:center;
-    color:var(--primary);
-    margin-bottom:30px;
+section{
+
+background:white;
+
+padding:25px;
+
+margin-bottom:25px;
+
+border-radius:15px;
+
+box-shadow:
+0 5px 15px rgba(0,0,0,.08);
 }
 
-h2{
-    margin-bottom:20px;
+section h2{
+
+margin-bottom:20px;
+
+color:#1e3a8a;
 }
 
-input{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:12px;
-    background:#f1f5f9;
-    font-size:16px;
-    margin-bottom:15px;
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fill,minmax(200px,1fr));
+
+gap:15px;
 }
 
 button{
-    border:none;
-    background:var(--primary);
-    color:white;
-    padding:14px 24px;
-    border-radius:12px;
-    cursor:pointer;
-    font-size:16px;
-    transition:.3s;
+
+padding:18px;
+
+border:none;
+
+border-radius:12px;
+
+background:#2563eb;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:.3s;
 }
 
 button:hover{
-    transform:translateY(-2px);
-    background:var(--secondary);
+
+transform:translateY(-3px);
+
+background:#1d4ed8;
 }
 
-.topbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:25px;
+@media(max-width:700px){
+
+.creator-bar{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:5px;
 }
 
-#timer{
-    background:#fee2e2;
-    color:#b91c1c;
-    padding:10px 15px;
-    border-radius:10px;
-    font-weight:bold;
-}
-
-#user{
-    background:#dcfce7;
-    color:#166534;
-    padding:10px 15px;
-    border-radius:10px;
-    font-weight:bold;
-}
-
-.option{
-    display:block;
-    padding:15px;
-    margin-bottom:12px;
-    border:2px solid #e2e8f0;
-    border-radius:12px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.option:hover{
-    border-color:var(--primary);
-    background:#eef2ff;
-}
-
-.option input{
-    width:auto;
-    margin-right:10px;
-}
-
-#question{
-    margin-bottom:20px;
-    color:#111827;
-}
-
-.dark{
-    background:#0f172a;
-}
-
-.dark .container{
-    background:#1e293b;
-}
-
-.dark h1,
-.dark h2,
-.dark #question{
-    color:white;
-}
-
-.dark .option{
-    border-color:#334155;
-    color:white;
-}
-
-.dark .option:hover{
-    background:#334155;
-}
-
-.dark input{
-    background:#334155;
-    color:white;
-}
-
-.dark #timer{
-    background:#7f1d1d;
-    color:white;
-}
-
-.dark #user{
-    background:#14532d;
-    color:white;
-}
-
-.login-card{
-    text-align:center;
-}
-
-.progress{
-    width:100%;
-    height:12px;
-    background:#e5e7eb;
-    border-radius:10px;
-    overflow:hidden;
-    margin-bottom:20px;
-}
-
-.progress-bar{
-    height:100%;
-    width:0%;
-    background:linear-gradient(
-        90deg,
-        #4f46e5,
-        #7c3aed
-    );
-    transition:.4s;
-}
-
-@media(max-width:768px){
-
-    .container{
-        padding:20px;
-    }
-
-    .topbar{
-        flex-direction:column;
-        gap:10px;
-    }
-
-    button{
-        width:100%;
-    }
 }
