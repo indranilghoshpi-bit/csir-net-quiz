@@ -1,62 +1,177 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSIR NET Mathematics Quiz</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>
+CSIR-NET Mathematics Portal
+</title>
+
+<link rel="stylesheet"
+href="style.css">
+
 </head>
+
 <body>
+
+<div class="creator-bar">
+
+    <span>
+        Created by Indranil Ghosh
+    </span>
+
+    <span>
+        Email: your-email@example.com
+    </span>
+
+</div>
+
+<header>
+
+<h1>
+🎓 CSIR-NET Mathematics Portal
+</h1>
+
+<p>
+Mock Tests • Previous Year Papers • Topic Tests
+</p>
+
+</header>
 
 <div class="container">
 
-    <h1>CSIR NET Mathematics Quiz</h1>
+    <section>
 
-    <div id="loginPage">
+        <h2>
+        Full Length Mock Tests
+        </h2>
 
-        <input
-            type="text"
-            id="username"
-            placeholder="Enter Your Name">
+        <div class="grid">
 
-        <button onclick="login()">
-            Start Quiz
-        </button>
+            <button
+            onclick="loadMock('mock1')">
+            Mock Test 1
+            </button>
 
-    </div>
+            <button
+            onclick="loadMock('mock2')">
+            Mock Test 2
+            </button>
 
-    <div id="quizPage" hidden>
+            <button
+            onclick="loadMock('mock3')">
+            Mock Test 3
+            </button>
 
-        <div class="topbar">
+            <button
+            onclick="loadMock('mock4')">
+            Mock Test 4
+            </button>
 
-            <span id="user"></span>
+            <button
+            onclick="loadMock('mock5')">
+            Mock Test 5
+            </button>
 
-            <span id="timer"></span>
-
-            <button onclick="toggleDark()">
-                Dark Mode
+            <button
+            onclick="loadMock('mock6')">
+            Mock Test 6
             </button>
 
         </div>
-<div class="progress">
-    <div
-    class="progress-bar"
-    id="progressBar">
-    </div>
-</div>
-        <h2 id="question"></h2>
 
-        <div id="options"></div>
+    </section>
 
-        <button onclick="nextQuestion()">
-            Next Question
-        </button>
+    <section>
 
-    </div>
+        <h2>
+        Previous Year Papers
+        </h2>
+
+        <div class="grid">
+
+            <button
+            onclick="loadMock('csir2025')">
+            CSIR NET 2025
+            </button>
+
+            <button
+            onclick="loadMock('csir2024')">
+            CSIR NET 2024
+            </button>
+
+            <button
+            onclick="loadMock('csir2023')">
+            CSIR NET 2023
+            </button>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>
+        Topic Tests
+        </h2>
+
+        <div class="grid">
+
+            <button
+            onclick="loadMock('linear_algebra')">
+            Linear Algebra
+            </button>
+
+            <button
+            onclick="loadMock('real_analysis')">
+            Real Analysis
+            </button>
+
+            <button
+            onclick="loadMock('functional_analysis')">
+            Functional Analysis
+            </button>
+
+            <button
+            onclick="loadMock('algebra')">
+            Abstract Algebra
+            </button>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>
+        Special Tests
+        </h2>
+
+        <div class="grid">
+
+            <button
+            onclick="loadMock('full_length_1')">
+            Full Length Test 1
+            </button>
+
+            <button
+            onclick="loadMock('full_length_2')">
+            Full Length Test 2
+            </button>
+
+        </div>
+
+    </section>
 
 </div>
 
 <script src="app.js"></script>
 
 </body>
+
 </html>
