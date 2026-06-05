@@ -1776,6 +1776,6 @@ function renderReviewMode() {
 // Re-render MathJax in review page
     if (window.MathJax) {
         MathJax.typesetPromise();
-    });
+    }
 
 }
