@@ -539,3 +539,25 @@ footer{
         font-size:22px;
     }
 }
+.developer-footer{
+    background:#212529;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+.developer-credit{
+    margin-top:8px;
+    font-size:14px;
+    opacity:0.9;
+}
+
+.developer-credit a{
+    color:#0dcaf0;
+    text-decoration:none;
+}
+
+.developer-credit a:hover{
+    text-decoration:underline;
+}
