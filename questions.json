@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "type": "MCQ",
+    "question": "Dimension of row space equals",
+    "options": [
+      "Rank",
+      "Trace",
+      "Determinant",
+      "Nullity"
+    ],
+    "answer": [0]
+  },
+
+  {
+    "id": 2,
+    "type": "MSQ",
+    "question": "Which are Banach spaces?",
+    "options": [
+      "L1[0,1]",
+      "C[0,1]",
+      "Q",
+      "l∞"
+    ],
+    "answer": [0,1,3]
+  },
+
+  {
+    "id": 3,
+    "type": "MCQ",
+    "question": "Rank Nullity Theorem states:",
+    "options": [
+      "Rank + Nullity = Number of Columns",
+      "Rank + Nullity = Number of Rows",
+      "Rank = Trace",
+      "Rank = Determinant"
+    ],
+    "answer": [0]
+  }
+]
