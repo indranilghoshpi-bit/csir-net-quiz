@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CSIR-NET Mock Examination</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- MathJax -->
+<script>
+window.MathJax = {
+    tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$']]
+    }
+};
+</script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header class="exam-header">
+
+    <div>
+        <div class="exam-title">
+            CSIR-NET Mathematical Sciences
+        </div>
+
+        <div class="candidate">
+            Candidate: Demo Candidate
+        </div>
+    </div>
+
+    <div class="timer" id="timer">
+        03:00:00
+    </div>
+
+    <button class="submit-btn" id="submitExam">
+        Submit Test
+    </button>
+
+</header>
+
+<!-- MAIN LAYOUT -->
+
+<div class="exam-container">
+
+    <!-- LEFT PANEL -->
+
+    <div class="question-panel">
+
+        <!-- SECTION TABS -->
+
+        <div class="section-tabs" id="sectionTabs">
+
+        </div>
+
+        <!-- QUESTION -->
+
+        <div class="question-number" id="questionNumber">
+            Question 1
+        </div>
+
+        <div class="question-text" id="questionText">
+
+        </div>
+
+        <!-- OPTIONS -->
+
+        <div class="options" id="optionsContainer">
+
+        </div>
+
+        <!-- BUTTONS -->
+
+        <div class="action-buttons">
+
+            <button class="previous-btn" id="previousBtn">
+                Previous
+            </button>
+
+            <button class="clear-response" id="clearBtn">
+                Clear Response
+            </button>
+
+            <button class="review-next" id="reviewBtn">
+                Mark for Review & Next
+            </button>
+
+            <button class="save-next" id="saveNextBtn">
+                Save & Next
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+
+    <div class="palette-panel">
+
+        <div class="palette-title">
+            Question Palette
+        </div>
+
+        <div class="palette-grid" id="paletteGrid">
+
+        </div>
+
+        <!-- LEGEND -->
+
+        <div class="legend">
+
+            <div class="legend-item">
+                <div class="legend-box notVisited"></div>
+                <span>Not Visited</span>
+            </div>
+
+            <div class="legend-item">
+                <div class="legend-box notAnswered"></div>
+                <span>Not Answered</span>
+            </div>
+
+            <div class="legend-item">
+                <div class="legend-box answered"></div>
+                <span>Answered</span>
+            </div>
+
+            <div class="legend-item">
+                <div class="legend-box markedForReview"></div>
+                <span>Marked For Review</span>
+            </div>
+
+            <div class="legend-item">
+                <div class="legend-box answeredAndMarked"></div>
+                <span>Answered & Marked</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- RESULT SECTION -->
+
+<div id="resultContainer" style="display:none">
+
+    <div class="result-container">
+
+        <div class="result-card">
+
+            <h2 class="result-title">
+                Test Summary
+            </h2>
+
+            <div class="score" id="finalScore">
+                0
+            </div>
+
+            <div id="summaryData"></div>
+
+        </div>
+
+        <div class="result-card">
+
+            <h2 class="result-title">
+                Statistics
+            </h2>
+
+            <div class="stats-grid" id="statistics">
+
+            </div>
+
+        </div>
+
+        <div class="result-card">
+
+            <h2 class="result-title">
+                Section Wise Performance
+            </h2>
+
+            <div id="sectionPerformance">
+
+            </div>
+
+        </div>
+
+        <div class="result-card">
+
+            <h2 class="result-title">
+                Analytics
+            </h2>
+
+            <div id="analyticsContainer">
+
+            </div>
+
+        </div>
+
+        <div class="result-card">
+
+            <h2 class="result-title">
+                Review Questions
+            </h2>
+
+            <div id="reviewContainer">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
