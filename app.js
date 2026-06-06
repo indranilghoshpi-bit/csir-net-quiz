@@ -1767,7 +1767,7 @@ function renderReviewMode() {
 
                 `;
 
-                               container.appendChild(div);
+container.appendChild(div);
 
             });
 
