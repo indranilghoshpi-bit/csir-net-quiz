@@ -1775,7 +1775,8 @@ container.appendChild(div);
 
     // Re-render MathJax in review page
     if (window.MathJax) {
-        MathJax.typesetPromise();
+      MathJax.typesetPromise()
+    .catch(err => console.error(err));
     }
 
 }
