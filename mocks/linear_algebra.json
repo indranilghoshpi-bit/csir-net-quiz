@@ -1,159 +1,716 @@
 {
   "test_name": "Linear Algebra Practice Test",
-  "duration_minutes": 60,
-  "total_marks": 32,
-
+  "duration_minutes": 180,
+  "total_marks": 150,
   "sections": [
     {
-      "name": "Part A",
+      "name": "Part A - MCQs",
       "questions": [
-
         {
           "id": 1,
           "type": "single",
-          "text": "If \\(A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}\\), then \\(\\det(A)\\) equals",
+          "text": "Let \\(A\\) be a \\(5\\times5\\) matrix with real entries such that the sum of the entries in each row of \\(A\\) is 1. Then the sum of all the entries in \\(A^3\\) is",
           "options": [
-            "-2",
-            "2",
+            "3",
+            "15",
             "5",
-            "10"
+            "125"
           ],
-          "correct_answer": 0,
-          "positive_marks": 2,
-          "negative_marks": 0.5
+          "correct_answer": 2,
+          "positive_marks": 3,
+          "negative_marks": 0.75
         },
-
         {
           "id": 2,
           "type": "single",
-          "text": "The dimension of the solution space of the system \\(Ax=0\\), where \\(A\\) is a \\(4\\times6\\) matrix of rank 4, is",
+          "text": "Let \\(J\\) denote a \\(101\\times101\\) matrix with all the entries equal to 1 and let \\(I\\) denote the identity matrix of order 101. Then the determinant of \\(J-I\\) is",
           "options": [
+            "101",
+            "1",
             "0",
-            "2",
-            "4",
-            "6"
+            "100"
           ],
-          "correct_answer": 1,
-          "positive_marks": 2,
-          "negative_marks": 0.5
+          "correct_answer": 3,
+          "positive_marks": 3,
+          "negative_marks": 0.75
         },
-
         {
           "id": 3,
-          "type": "nat",
-          "text": "Let \\(I\\) denote the identity matrix of order 3. Compute \\(\\operatorname{trace}(I)\\).",
-          "correct_answer": 3,
-          "positive_marks": 2,
-          "negative_marks": 0
-        }
-
-      ]
-    },
-
-    {
-      "name": "Part B",
-      "questions": [
-
+          "type": "single",
+          "text": "Let \\(A,B\\) be \\(n\\times n\\) matrices such that \\(BA+B^2=I-BA^2\\), where \\(I\\) is the \\(n\\times n\\) identity matrix. Which of the following is always true?",
+          "options": [
+            "\\(A\\) is nonsingular",
+            "\\(B\\) is nonsingular",
+            "\\(A+B\\) is nonsingular",
+            "\\(AB\\) is nonsingular"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
         {
           "id": 4,
           "type": "single",
-          "text": "Let \\(T:\\mathbb{R}^3\\to\\mathbb{R}^3\\) be represented by a diagonal matrix with entries \\(1,2,3\\). The eigenvalues are",
+          "text": "Let \\(P\\) be a \\(2\\times2\\) complex matrix such that \\(P^*P\\) is the identity matrix, where \\(P^*\\) is the conjugate transpose of \\(P\\). Then the eigenvalues of \\(P\\) are",
           "options": [
-            "1,2,3",
-            "1",
-            "2,3",
-            "None"
+            "real",
+            "complex conjugates of each other",
+            "reciprocals of each other",
+            "of modulus 1"
+          ],
+          "correct_answer": 3,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 5,
+          "type": "single",
+          "text": "Let \\(V\\) be the space of twice differentiable functions on \\(\\mathbb{R}\\) satisfying \\(f''-2f'+f=0\\). Define \\(T: V\\to\\mathbb{R}^2\\) by \\(T(f)=(f'(0), f(0))\\). Then \\(T\\) is",
+          "options": [
+            "one-to-one and onto",
+            "one-to-one but not onto",
+            "onto but not one-to-one",
+            "neither one-to-one nor onto"
           ],
           "correct_answer": 0,
           "positive_marks": 3,
           "negative_marks": 0.75
         },
-
-        {
-          "id": 5,
-          "type": "multiple",
-          "text": "Select all matrices that are invertible.",
-          "options": [
-            "\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)",
-            "\\(\\begin{pmatrix}1&1\\\\1&1\\end{pmatrix}\\)",
-            "\\(\\begin{pmatrix}2&0\\\\0&3\\end{pmatrix}\\)",
-            "\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)"
-          ],
-          "correct_answer": [0,2],
-          "positive_marks": 4,
-          "negative_marks": 1
-        },
-
         {
           "id": 6,
           "type": "single",
-          "text": "The characteristic polynomial of \\(\\begin{pmatrix}2&0\\\\0&3\\end{pmatrix}\\) is",
+          "text": "The row space of a \\(20\\times50\\) matrix \\(A\\) has dimension 13. What is the dimension of the space of solutions of \\(Ax=0\\)?",
           "options": [
-            "\\((\\lambda-2)(\\lambda-3)\\)",
-            "\\((\\lambda+2)(\\lambda+3)\\)",
-            "\\(\\lambda^2+5\\lambda+6\\)",
-            "\\(\\lambda^2-6\\)"
+            "7",
+            "13",
+            "33",
+            "37"
+          ],
+          "correct_answer": 3,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 7,
+          "type": "single",
+          "text": "Let \\(A,B\\) be \\(n\\times n\\) matrices. Which of the following equals \\(\\operatorname{trace}(A^2B^2)\\)?",
+          "options": [
+            "\\((\\operatorname{trace}(AB))^2\\)",
+            "\\(\\operatorname{trace}(AB^2A)\\)",
+            "\\(\\operatorname{trace}((AB)^2)\\)",
+            "\\(\\operatorname{trace}(BABA)\\)"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 8,
+          "type": "single",
+          "text": "Let \\(S\\) denote the set of all the prime numbers \\(p\\) with the property that the matrix \\(\\begin{pmatrix}91&31&0\\\\29&31&0\\\\79&23&59\\end{pmatrix}\\) has an inverse in the field \\(\\mathbb{Z}/p\\mathbb{Z}\\). Then",
+          "options": [
+            "\\(S=\\{31\\}\\)",
+            "\\(S=\\{31,59\\}\\)",
+            "\\(S=\\{7,13,59\\}\\)",
+            "\\(S\\) is infinite"
+          ],
+          "correct_answer": 3,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 9,
+          "type": "single",
+          "text": "For a positive integer \\(n\\), let \\(P_n\\) denote the vector space of polynomials in one variable \\(x\\) with real coefficients and with degree \\(\\le n\\). Consider the map \\(T: P_2\\to P_4\\) defined by \\(T(p(x))=p(x^2)\\). Then",
+          "options": [
+            "\\(T\\) is a linear transformation and \\(\\dim(\\operatorname{range}(T))=5\\)",
+            "\\(T\\) is a linear transformation and \\(\\dim(\\operatorname{range}(T))=3\\)",
+            "\\(T\\) is a linear transformation and \\(\\dim(\\operatorname{range}(T))=2\\)",
+            "\\(T\\) is not a linear transformation"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 10,
+          "type": "single",
+          "text": "Let \\(A\\) be a real \\(3\\times4\\) matrix of rank 2. Then the rank of \\(A^tA\\), where \\(A^t\\) denotes the transpose of \\(A\\), is:",
+          "options": [
+            "exactly 2",
+            "exactly 3",
+            "exactly 4",
+            "at most 2 but not necessarily 2"
           ],
           "correct_answer": 0,
           "positive_marks": 3,
           "negative_marks": 0.75
         },
-
         {
-          "id": 7,
-          "type": "nat",
-          "text": "If a matrix has eigenvalues 1, 2 and 3, compute its trace.",
-          "correct_answer": 6,
-          "positive_marks": 3,
-          "negative_marks": 0
-        }
-
-      ]
-    },
-
-    {
-      "name": "Part C",
-      "questions": [
-
-        {
-          "id": 8,
-          "type": "multiple",
-          "text": "Let \\(V\\) be an inner product space. Select all true statements.",
-          "options": [
-            "Every orthonormal set is linearly independent.",
-            "Every linearly independent set is orthonormal.",
-            "Orthogonal vectors are linearly independent.",
-            "Gram-Schmidt produces an orthonormal set."
-          ],
-          "correct_answer": [0,2,3],
-          "positive_marks": 4,
-          "negative_marks": 1
-        },
-
-        {
-          "id": 9,
+          "id": 11,
           "type": "single",
-          "text": "The dimension of the space of all \\(3\\times3\\) real symmetric matrices is",
+          "text": "If \\(A\\) is a \\(5\\times5\\) real matrix with trace 15 and if 2 and 3 are eigenvalues of \\(A\\), each with algebraic multiplicity 2, then the determinant of \\(A\\) is equal to",
           "options": [
-            "3",
-            "6",
-            "9",
-            "12"
+            "0",
+            "24",
+            "120",
+            "180"
+          ],
+          "correct_answer": 3,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 12,
+          "type": "single",
+          "text": "Given a \\(n\\times n\\) matrix \\(B\\), define \\(e^B\\) by \\(e^B=\\sum_{j=0}^{\\infty}\\frac{B^j}{j!}\\). Let \\(p\\) be the characteristic polynomial of \\(B\\). Then the matrix \\(e^{p(B)}\\) is",
+          "options": [
+            "\\(I_{n\\times n}\\)",
+            "\\(0_{n\\times n}\\)",
+            "\\(e I_{n\\times n}\\)",
+            "\\(\\pi I_{n\\times n}\\)"
+          ],
+          "correct_answer": 0,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 13,
+          "type": "single",
+          "text": "Let \\(A\\) be a \\(n\\times m\\) matrix and \\(b\\) be a \\(n\\times1\\) vector (with real entries). Suppose the equation \\(Ax=b\\), \\(x\\in\\mathbb{R}^m\\) admits a unique solution. Then we can conclude that",
+          "options": [
+            "\\(m\\ge n\\)",
+            "\\(n\\ge m\\)",
+            "\\(n=m\\)",
+            "\\(n>m\\)"
           ],
           "correct_answer": 1,
-          "positive_marks": 4,
-          "negative_marks": 1
+          "positive_marks": 3,
+          "negative_marks": 0.75
         },
-
         {
-          "id": 10,
-          "type": "nat",
-          "text": "Let \\(A=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\). Compute \\(\\|A\\|_F^2\\), where \\(\\|A\\|_F\\) is the Frobenius norm.",
+          "id": 14,
+          "type": "single",
+          "text": "Let \\(V\\) be the vector space of all real polynomials of degree \\(\\le 10\\). Let \\(Tp(x)=p'(x)\\) for \\(p\\in V\\) be a linear transformation from \\(V\\) to \\(V\\). Consider the basis \\(\\{1,x,x^2,\\dots,x^{10}\\}\\) of \\(V\\). Let \\(A\\) be the matrix of \\(T\\) with respect to this basis. Then",
+          "options": [
+            "\\(\\operatorname{Trace} A=1\\)",
+            "\\(\\det A=0\\)",
+            "there is no \\(m\\in\\mathbb{N}\\) such that \\(A^m=0\\)",
+            "\\(A\\) has a non zero eigenvalue"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 15,
+          "type": "single",
+          "text": "Let \\(A\\) be a \\(n\\times n\\) real symmetric non-singular matrix. Suppose there exists \\(x\\in\\mathbb{R}^n\\) such that \\(x^tAx<0\\). Then we can conclude that",
+          "options": [
+            "\\(\\det(A)<0\\)",
+            "\\(B=-A\\) is positive definite",
+            "\\(\\exists y\\in\\mathbb{R}^n\\) such that \\(y^tA^{-1}y<0\\)",
+            "\\(\\forall y\\in\\mathbb{R}^n\\), \\(y^tA^{-1}y<0\\)"
+          ],
           "correct_answer": 2,
-          "positive_marks": 5,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 16,
+          "type": "single",
+          "text": "The matrix \\(\\begin{pmatrix}3&-1&0\\\\-1&2&-1\\\\0&-1&3\\end{pmatrix}\\) is",
+          "options": [
+            "positive definite.",
+            "non-negative definite but not positive definite.",
+            "negative definite.",
+            "neither negative definite nor positive definite."
+          ],
+          "correct_answer": 0,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 17,
+          "type": "single",
+          "text": "Let \\(D_1=\\det\\begin{pmatrix}a&b&c\\\\x&y&z\\\\p&q&r\\end{pmatrix}\\) and \\(D_2=\\det\\begin{pmatrix}-x&a&-p\\\\y&-b&q\\\\z&-c&r\\end{pmatrix}\\). Then",
+          "options": [
+            "\\(D_1=D_2\\)",
+            "\\(D_1=2D_2\\)",
+            "\\(D_1=-D_2\\)",
+            "\\(2D_1=D_2\\)"
+          ],
+          "correct_answer": 2,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 18,
+          "type": "single",
+          "text": "Let \\(J\\) denote the matrix of order \\(n\\times n\\) with all entries 1 and let \\(B\\) be a \\(3n\\times3n\\) matrix given by \\(B=\\begin{pmatrix}0&0&J\\\\0&J&0\\\\J&0&0\\end{pmatrix}\\). Then the rank of \\(B\\) is",
+          "options": [
+            "\\(2n\\)",
+            "\\(3n-1\\)",
+            "\\(2\\)",
+            "\\(3\\)"
+          ],
+          "correct_answer": 3,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 19,
+          "type": "single",
+          "text": "Let \\(A\\) be an \\(n\\times m\\) matrix with each entry equal to +1, -1 or 0 such that every column has exactly one +1 and exactly one -1. We can conclude that",
+          "options": [
+            "\\(\\operatorname{Rank} A\\le n-1\\)",
+            "\\(\\operatorname{Rank} A=m\\)",
+            "\\(n\\le m\\)",
+            "\\(n-1\\le m\\)"
+          ],
+          "correct_answer": 0,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 20,
+          "type": "single",
+          "text": "What is the number of non-singular \\(3\\times3\\) matrices over \\(\\mathbb{F}_2\\), the finite field with two elements?",
+          "options": [
+            "168",
+            "384",
+            "\\(2^3\\)",
+            "\\(3^2\\)"
+          ],
+          "correct_answer": 0,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 21,
+          "type": "single",
+          "text": "Let \\(A\\) be a \\(4\\times4\\) matrix. Suppose that the null space \\(N(A)\\) of \\(A\\) is \\(\\{(x,y,z,w)\\in\\mathbb{R}^4:x+y+z=0, x+y+w=0\\}\\). Then",
+          "options": [
+            "\\(\\dim(\\text{column space}(A))=1\\)",
+            "\\(\\dim(\\text{column space}(A))=2\\)",
+            "\\(\\operatorname{rank}(A)=1\\)",
+            "\\(S=\\{(1,1,-1,0), (1,1,0,-1)\\}\\) is a basis of \\(N(A)\\)"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 22,
+          "type": "single",
+          "text": "Let \\(A\\) and \\(B\\) be real invertible matrices such that \\(AB=-BA\\). Then",
+          "options": [
+            "\\(\\operatorname{Trace}(A)=\\operatorname{Trace}(B)=0\\)",
+            "\\(\\operatorname{Trace}(A)=\\operatorname{Trace}(B)=1\\)",
+            "\\(\\operatorname{Trace}(A)=0, \\operatorname{Trace}(B)=1\\)",
+            "\\(\\operatorname{Trace}(A)=1, \\operatorname{Trace}(B)=0\\)"
+          ],
+          "correct_answer": 0,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 23,
+          "type": "single",
+          "text": "Let \\(A\\) be an \\(n\\times n\\) self-adjoint matrix with eigenvalues \\(\\lambda_1,\\dots,\\lambda_n\\). Let \\(\\|X\\|_2=\\sqrt{|x_1|^2+\\dots+|x_n|^2}\\) for \\(X=(x_1,\\dots,x_n)\\in\\mathbb{C}^n\\). If \\(p(A)=a_0I+a_1A+\\dots+a_nA^n\\), then \\(\\sup_{\\|X\\|_2=1} \\|p(A)X\\|_2\\) is equal to",
+          "options": [
+            "\\(\\max\\{a_0+a_1\\lambda_j+\\dots+a_n\\lambda_j^n:1\\le j\\le n\\}\\)",
+            "\\(\\max\\{|a_0+a_1\\lambda_j+\\dots+a_n\\lambda_j^n|:1\\le j\\le n\\}\\)",
+            "\\(\\min\\{a_0+a_1\\lambda_j+\\dots+a_n\\lambda_j^n:1\\le j\\le n\\}\\)",
+            "\\(\\min\\{|a_0+a_1\\lambda_j+\\dots+a_n\\lambda_j^n|:1\\le j\\le n\\}\\)"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 24,
+          "type": "single",
+          "text": "Let \\(p(x)=\\alpha x^2+\\beta x+\\gamma\\) be a polynomial, where \\(\\alpha, \\beta, \\gamma\\in\\mathbb{R}\\). Fix \\(x_0\\in\\mathbb{R}\\). Let \\(S=\\{(a,b,c)\\in\\mathbb{R}^3:p(x)=a(x-x_0)^2+b(x-x_0)+c\\text{ for all }x\\in\\mathbb{R}\\}\\). Then the number of elements in \\(S\\) is",
+          "options": [
+            "0",
+            "1",
+            "strictly greater than 1 but finite",
+            "infinite"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        },
+        {
+          "id": 25,
+          "type": "single",
+          "text": "Let \\(A=\\begin{pmatrix}1&0&2\\\\1&-2&0\\\\0&0&-3\\end{pmatrix}\\) and \\(I\\) be the \\(3\\times3\\) identity matrix. If \\(6A^{-1}=aA^2+bA+cI\\) for \\(a,b,c\\in\\mathbb{R}\\) then \\((a,b,c)\\) equals",
+          "options": [
+            "(1, 2, 1)",
+            "(1, -1, 2)",
+            "(4, 1, 1)",
+            "(1, 4, 1)"
+          ],
+          "correct_answer": 3,
+          "positive_marks": 3,
+          "negative_marks": 0.75
+        }
+      ]
+    },
+    {
+      "name": "Part B - MSQs",
+      "questions": [
+        {
+          "id": 26,
+          "type": "multiple",
+          "text": "Let \\(V\\) denote a vector space over a field \\(F\\) and with a basis \\(B=\\{e_1,e_2,\\dots,e_n\\}\\). Let \\(x_1,x_2,\\dots,x_n\\in F\\). Let \\(C=\\{x_1e_1, x_1e_1+x_2e_2,\\dots, x_1e_1+x_2e_2+\\dots+x_ne_n\\}\\). Then",
+          "options": [
+            "\\(C\\) is linearly independent set implies that \\(x_i\\ne0\\) for every \\(i=1,2,\\dots,n\\).",
+            "\\(x_i\\ne0\\) for every \\(i=1,2,\\dots,n\\) implies that \\(C\\) is linearly independent set.",
+            "The linear span of \\(C\\) is \\(V\\) implies that \\(x_i\\ne0\\) for every \\(i=1,2,\\dots,n\\).",
+            "\\(x_i\\ne0\\) for every \\(i=1,2,\\dots,n\\) implies that the linear span of \\(C\\) is \\(V\\)."
+          ],
+          "correct_answer": [0, 1, 2, 3],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 27,
+          "type": "multiple",
+          "text": "Let \\(V\\) denote the vector space of all polynomials over \\(\\mathbb{R}\\) of degree less than or equal to \\(n\\). Which of the following defines a norm on \\(V\\)?",
+          "options": [
+            "\\(\\|p\\|=\\sqrt{|p(1)|^2+\\dots+|p(n+1)|^2}\\), \\(p\\in V\\)",
+            "\\(\\|p\\|=\\sup_{t\\in[0,1]}|p(t)|\\), \\(p\\in V\\)",
+            "\\(\\|p\\|=\\int_0^1|p(t)|dt\\), \\(p\\in V\\)",
+            "\\(\\|p\\|=\\sup_{t\\in[0,1]}|p'(t)|\\), \\(p\\in V\\)"
+          ],
+          "correct_answer": [0, 1, 2],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 28,
+          "type": "multiple",
+          "text": "Let \\(u,v,w\\) be vectors in an inner-product space \\(V\\), satisfying \\(\\|u\\|=\\|v\\|=\\|w\\|=2\\) and \\(\\langle u,v\\rangle=0, \\langle u,w\\rangle=1, \\langle v,w\\rangle=-1\\). Then which of the following are true?",
+          "options": [
+            "\\(\\|w+v-u\\|=2\\sqrt{2}\\).",
+            "\\(\\{\\frac{1}{2}u,\\frac{1}{2}v\\}\\) forms an orthonormal basis of a two dimensional subspace of \\(V\\).",
+            "\\(w\\) and \\(4u-w\\) are orthogonal to each other.",
+            "\\(u,v,w\\) are necessarily linearly independent."
+          ],
+          "correct_answer": [0, 1, 2, 3],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 29,
+          "type": "multiple",
+          "text": "Let \\(A\\) be a \\(4\\times4\\) matrix over \\(\\mathbb{C}\\) such that \\(\\operatorname{rank}(A)=2\\) and \\(A^3=A^2\\ne0\\). Suppose that \\(A\\) is not diagonalizable. Then",
+          "options": [
+            "One of the Jordan blocks of the Jordan canonical form of \\(A\\) is \\(\\begin{pmatrix}0&1\\\\0&0\\end{pmatrix}\\).",
+            "\\(A^2=A\\ne0\\).",
+            "There exists a vector \\(v\\) such that \\(Av\\ne0\\) but \\(A^2v=0\\).",
+            "The characteristic polynomial of \\(A\\) is \\(x^4-x^3\\)."
+          ],
+          "correct_answer": [0, 2, 3],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 30,
+          "type": "multiple",
+          "text": "Let \\(\\varphi:\\mathbb{R}^2\\to\\mathbb{C}\\) be the map defined by \\(\\varphi(x,y)=z\\), where \\(z=x+iy\\). Let \\(f:\\mathbb{C}\\to\\mathbb{C}\\) be the function \\(f(z)=z^2\\) and \\(F=\\varphi^{-1}f\\varphi\\). Which of the following are correct?",
+          "options": [
+            "The linear transformation \\(T(x,y)=2\\begin{pmatrix}x&-y\\\\y&x\\end{pmatrix}\\) represents the derivative of \\(F\\) at \\((x,y)\\).",
+            "The linear transformation \\(T(x,y)=2\\begin{pmatrix}x&y\\\\y&x\\end{pmatrix}\\) represents the derivative of \\(F\\) at \\((x,y)\\).",
+            "The linear transformation \\(T(z)=2z\\) represents the derivative of \\(f\\) at \\(z\\in\\mathbb{C}\\).",
+            "The linear transformation \\(T(z)=2z\\) represents the derivative of \\(f\\) only at 0."
+          ],
+          "correct_answer": [0, 2],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 31,
+          "type": "multiple",
+          "text": "Let \\(V\\) be the vector space of polynomials over \\(\\mathbb{R}\\) of degree less than or equal to \\(n\\). For \\(p(x)=a_0+a_1x+\\dots+a_nx^n\\) in \\(V\\), define a linear transformation \\(T:V\\to V\\) by \\((Tp)(x)=a_0-a_1x+a_2x^2-\\dots+(-1)^na_nx^n\\). Then which of the following are correct?",
+          "options": [
+            "\\(T\\) is one-to-one",
+            "\\(T\\) is onto",
+            "\\(T\\) is invertible",
+            "\\(\\det T=0\\)"
+          ],
+          "correct_answer": [0, 1, 2],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 32,
+          "type": "multiple",
+          "text": "Consider a homogeneous system of linear equations \\(Ax=0\\), where \\(A\\) is an \\(m\\times n\\) real matrix and \\(n>m\\). Then which of the following statements are always true?",
+          "options": [
+            "\\(Ax=0\\) has a solution.",
+            "\\(Ax=0\\) has no non-zero solution.",
+            "\\(Ax=0\\) has a non-zero solution.",
+            "Dimension of the space of all solutions is at least \\(n-m\\)."
+          ],
+          "correct_answer": [0, 2, 3],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 33,
+          "type": "multiple",
+          "text": "Let \\(A\\) be a real \\(n\\times n\\) orthogonal matrix, that is, \\(A^tA=AA^t=I_n\\), the \\(n\\times n\\) identity matrix. Which of the following statements are necessarily true?",
+          "options": [
+            "\\(\\langle Ax,Ay\\rangle=\\langle x,y\\rangle \\forall x,y\\in\\mathbb{R}^n\\)",
+            "All eigenvalues of \\(A\\) are either +1 or -1.",
+            "The rows of \\(A\\) form an orthonormal basis of \\(\\mathbb{R}^n\\).",
+            "\\(A\\) is diagonalizable over \\(\\mathbb{R}\\)."
+          ],
+          "correct_answer": [0, 2],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 34,
+          "type": "multiple",
+          "text": "Which of the following matrices have Jordan canonical form equal to \\(\\begin{pmatrix}0&1&0\\\\0&0&0\\\\0&0&0\\end{pmatrix}\\)?",
+          "options": [
+            "\\(\\begin{pmatrix}0&0&1\\\\0&0&0\\\\0&0&0\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}0&0&1\\\\0&0&1\\\\0&0&0\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}0&1&1\\\\0&0&0\\\\0&0&0\\end{pmatrix}\\)",
+            "\\(\\begin{pmatrix}0&1&1\\\\0&0&1\\\\0&0&0\\end{pmatrix}\\)"
+          ],
+          "correct_answer": [0, 1, 2],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 35,
+          "type": "multiple",
+          "text": "Let \\(A\\) be a \\(3\\times4\\) matrix and \\(b\\) be a \\(3\\times1\\) matrix with integer entries. Suppose that the system \\(Ax=b\\) has a complex solution. Then",
+          "options": [
+            "\\(Ax=b\\) has an integer solution.",
+            "\\(Ax=b\\) has a rational solution.",
+            "The set of real solutions to \\(Ax=0\\) has a basis consisting of rational solutions.",
+            "If \\(b\\ne0\\), then \\(A\\) has positive rank."
+          ],
+          "correct_answer": [1, 2, 3],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 36,
+          "type": "multiple",
+          "text": "Let \\(f\\) be a non-zero symmetric bilinear form on \\(\\mathbb{R}^3\\). Suppose that there exist linear transformations \\(T_i:\\mathbb{R}^3\\to\\mathbb{R}\\), \\(i=1,2\\) such that for all \\(\\alpha, \\beta\\in\\mathbb{R}^3\\), \\(f(\\alpha,\\beta)=T_1(\\alpha)T_2(\\beta)\\). Then",
+          "options": [
+            "\\(\\operatorname{rank} f=1\\)",
+            "\\(\\dim(\\{\\beta\\in\\mathbb{R}^3:f(\\alpha,\\beta)=0 \\text{ for all } \\alpha\\in\\mathbb{R}^3\\})=2\\)",
+            "\\(f\\) is positive semi-definite or negative semi-definite.",
+            "\\(\\{\\alpha:f(\\alpha,\\alpha)=0\\}\\) is a linear subspace of dimension 2."
+          ],
+          "correct_answer": [0, 1, 2, 3],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 37,
+          "type": "multiple",
+          "text": "The matrix \\(A=\\begin{pmatrix}5&9&8\\\\1&8&2\\\\9&1&0\\end{pmatrix}\\) satisfies:",
+          "options": [
+            "\\(A\\) is invertible and the inverse has all integer entries.",
+            "\\(\\det(A)\\) is odd.",
+            "\\(\\det(A)\\) is divisible by 13.",
+            "\\(\\det(A)\\) has at least two prime divisors."
+          ],
+          "correct_answer": [2, 3],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 38,
+          "type": "multiple",
+          "text": "Let \\(A\\) be \\(5\\times5\\) matrix and let \\(B\\) be obtained by changing one element of \\(A\\). Let \\(r\\) and \\(s\\) be the ranks of \\(A\\) and \\(B\\) respectively. Which of the following statements is/are correct?",
+          "options": [
+            "\\(s\\le r+1\\)",
+            "\\(r-1\\le s\\)",
+            "\\(s=r-1\\)",
+            "\\(s\\ne r\\)"
+          ],
+          "correct_answer": [0, 1],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 39,
+          "type": "multiple",
+          "text": "Let \\(M_n(K)\\) denote the space of all \\(n\\times n\\) matrices with entries in a field \\(K\\). Fix a non-singular matrix \\(A=(A_{ij})\\in M_n(K)\\), and consider the linear map \\(T:M_n(K)\\to M_n(K)\\) given by \\(T(X)=AX\\). Then",
+          "options": [
+            "\\(\\operatorname{trace}(T)=n\\sum_{i=1}^n A_{ii}\\)",
+            "\\(\\operatorname{trace}(T)=\\sum_{i=1}^n\\sum_{j=1}^n A_{ij}\\)",
+            "rank of \\(T\\) is \\(n^2\\)",
+            "\\(T\\) is non singular"
+          ],
+          "correct_answer": [0, 2, 3],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 40,
+          "type": "multiple",
+          "text": "For arbitrary subspaces \\(U,V\\) and \\(W\\) of a finite dimensional vector space, which of the following hold",
+          "options": [
+            "\\(U\\cap(V+W)\\subset U\\cap V+U\\cap W\\)",
+            "\\(U\\cap(V+W)\\supset U\\cap V+U\\cap W\\)",
+            "\\((U\\cap V)+W\\subset(U+W)\\cap(V+W)\\)",
+            "\\((U\\cap V)+W\\supset(U+W)\\cap(V+W)\\)"
+          ],
+          "correct_answer": [1, 2],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 41,
+          "type": "multiple",
+          "text": "Let \\(A\\) be \\(4\\times7\\) real matrix and \\(B\\) be a \\(7\\times4\\) real matrix such that \\(AB=I_4\\), where \\(I_4\\) is the \\(4\\times4\\) identity matrix. Which of the following is/are always true?",
+          "options": [
+            "\\(\\operatorname{rank}(A)=4\\)",
+            "\\(\\operatorname{rank}(B)=7\\)",
+            "\\(\\operatorname{nullity}(B)=0\\)",
+            "\\(BA=I_7\\) where \\(I_7\\) is the \\(7\\times7\\) identity matrix"
+          ],
+          "correct_answer": [0, 2],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 42,
+          "type": "multiple",
+          "text": "Let \\(\\mathbb{R}[x]\\) denote the vector space of all real polynomials. Let \\(D:\\mathbb{R}[x]\\to\\mathbb{R}[x]\\) denote the map \\(Df = \\frac{df}{dx}\\). Then,",
+          "options": [
+            "\\(D\\) is one-one",
+            "\\(D\\) is onto",
+            "There exists \\(E:\\mathbb{R}[x]\\to\\mathbb{R}[x]\\) so that \\(D(E(f))=f\\) \\(\\forall f\\).",
+            "There exists \\(E:\\mathbb{R}[x]\\to\\mathbb{R}[x]\\) so that \\(E(D(f))=f\\) \\(\\forall f\\)."
+          ],
+          "correct_answer": [1, 2],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 43,
+          "type": "multiple",
+          "text": "Let \\(A=\\begin{pmatrix}x&y\\\\-y&x\\end{pmatrix}\\), where \\(x,y\\in\\mathbb{R}\\) such that \\(x^2+y^2=1\\). Then we must have",
+          "options": [
+            "For any \\(n\\ge1\\), \\(A^n=\\begin{pmatrix}\\cos\\theta&\\sin\\theta\\\\-\\sin\\theta&\\cos\\theta\\end{pmatrix}\\) where \\(x=\\cos(\\theta/n)\\), \\(y=\\sin(\\theta/n)\\)",
+            "\\(\\operatorname{tr}(A)\\ne0\\)",
+            "\\(A^t=A^{-1}\\)",
+            "\\(A\\) is similar to a diagonal matrix over \\(\\mathbb{C}\\)"
+          ],
+          "correct_answer": [0, 2, 3],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 44,
+          "type": "multiple",
+          "text": "Given a \\(4\\times4\\) real matrix \\(A\\), let \\(T:\\mathbb{R}^4\\to\\mathbb{R}^4\\) be the linear transformation defined by \\(Tv=Av\\). For which choices of \\(A\\) given below, do \\(\\operatorname{Image}(T)\\) and \\(\\operatorname{Image}(T^2)\\) have respective dimensions 2 and 1? (* denotes a non zero entry)",
+          "options": [
+            "\\(A=\\begin{pmatrix}0&0&*&*\\\\0&0&0&*\\\\0&0&0&*\\\\0&0&0&0\\end{pmatrix}\\)",
+            "\\(A=\\begin{pmatrix}0&0&*&0\\\\0&0&*&0\\\\0&0&0&*\\\\0&0&0&*\\end{pmatrix}\\)",
+            "\\(A=\\begin{pmatrix}0&0&0&0\\\\0&0&0&0\\\\0&0&0&*\\\\0&0&*&0\\end{pmatrix}\\)",
+            "\\(A=\\begin{pmatrix}0&0&0&0\\\\0&0&0&0\\\\0&0&*&*\\\\0&0&*&*\\end{pmatrix}\\)"
+          ],
+          "correct_answer": [0, 1],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 45,
+          "type": "multiple",
+          "text": "Let \\(F:\\mathbb{R}^n\\times\\mathbb{R}^n\\to\\mathbb{R}\\) be the function \\(F(x,y)=\\langle Ax,y\\rangle\\) where \\(\\langle,\\rangle\\) is the standard inner product of \\(\\mathbb{R}^n\\) and \\(A\\) is a \\(n\\times n\\) real matrix. Here \\(D\\) denotes the total derivative. Which of the following statements are correct?",
+          "options": [
+            "\\((DF(x,y))(u,v)=\\langle Au,y\\rangle+\\langle Ax,v\\rangle\\)",
+            "\\((DF(x,y))(0,0)=0\\)",
+            "\\(DF(x,y)\\) may not exist for some \\((x,y)\\in\\mathbb{R}^n\\times\\mathbb{R}^n\\)",
+            "\\(DF(x,y)\\) does not exist at \\((x,y)=(0,0)\\)"
+          ],
+          "correct_answer": [0, 1],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 46,
+          "type": "multiple",
+          "text": "An \\(n\\times n\\) complex matrix \\(A\\) satisfies \\(A^k=I_n\\), where \\(k\\) is a positive integer > 1. Suppose 1 is not an eigenvalue of \\(A\\). Then which of the following statements are necessarily true?",
+          "options": [
+            "\\(A\\) is diagonalizable.",
+            "\\(A+A^2+\\dots+A^{k-1}=O\\)",
+            "\\(\\operatorname{tr}(A)+\\operatorname{tr}(A^2)+\\dots+\\operatorname{tr}(A^{k-1})=-n\\)",
+            "\\(A^{-1}+A^{-2}+\\dots+A^{-(k-1)}=-I_n\\)"
+          ],
+          "correct_answer": [0, 2, 3],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 47,
+          "type": "multiple",
+          "text": "Let \\(S:\\mathbb{R}^n\\to\\mathbb{R}^n\\) be given by \\(S(v)=\\alpha v\\) for a fixed \\(\\alpha\\in\\mathbb{R}\\), \\(\\alpha\\ne0\\). Let \\(T:\\mathbb{R}^n\\to\\mathbb{R}^n\\) be a linear transformation such that \\(B=\\{v_1,\\dots,v_n\\}\\) is a set of linearly independent eigen vectors of \\(T\\). Then",
+          "options": [
+            "The matrix of \\(T\\) with respect to \\(B\\) is diagonal.",
+            "The matrix of \\((T-S)\\) with respect to \\(B\\) is diagonal.",
+            "The matrix of \\(T\\) with respect to \\(B\\) is not necessarily diagonal, but is upper triangular.",
+            "The matrix of \\(T\\) with respect to \\(B\\) is diagonal but the matrix of \\((T-S)\\) with respect to \\(B\\) is not diagonal."
+          ],
+          "correct_answer": [0, 1],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 48,
+          "type": "multiple",
+          "text": "Let \\(A=\\begin{pmatrix}a&b&c\\\\0&a&d\\\\0&0&a\\end{pmatrix}\\) be a \\(3\\times3\\) matrix where \\(a,b,c,d\\) are integers. Then, we must have:",
+          "options": [
+            "If \\(a\\ne0\\), there is a polynomial \\(p\\in\\mathbb{Q}[x]\\) such that \\(p(A)\\) is the inverse of \\(A\\).",
+            "For each polynomial \\(q\\in\\mathbb{Z}[x]\\), the matrix \\(q(A)\\) is of the form \\(\\begin{pmatrix}a'&0&c'\\\\0&a'&0\\\\0&0&a'\\end{pmatrix}\\).",
+            "If \\(A^n=O\\) for some positive integer \\(n\\), then \\(A^3=O\\)",
+            "\\(A\\) commutes with every matrix of the form \\(\\begin{pmatrix}a'&0&c'\\\\0&a'&0\\\\0&0&a'\\end{pmatrix}\\)."
+          ],
+          "correct_answer": [0, 2, 3],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 49,
+          "type": "multiple",
+          "text": "Which of the following are subspaces of vector space \\(\\mathbb{R}^3\\)?",
+          "options": [
+            "\\(\\{(x,y,z):x+y=0\\}\\)",
+            "\\(\\{(x,y,z):x-y=0\\}\\)",
+            "\\(\\{(x,y,z):x+y=1\\}\\)",
+            "\\(\\{(x,y,z):x-y=1\\}\\)"
+          ],
+          "correct_answer": [0, 1],
+          "positive_marks": 4.75,
+          "negative_marks": 0
+        },
+        {
+          "id": 50,
+          "type": "multiple",
+          "text": "Consider non-zero vector spaces \\(V_1, V_2, V_3, V_4\\) and linear transformations \\(T_1: V_1\\to V_2\\), \\(T_2: V_2\\to V_3\\), \\(T_3: V_3\\to V_4\\) such that \\(\\operatorname{Ker}(T_1)=\\{0\\}\\), \\(\\operatorname{Range}(T_1)=\\operatorname{Ker}(T_2)\\), \\(\\operatorname{Range}(T_2)=\\operatorname{Ker}(T_3)\\), \\(\\operatorname{Range}(T_3)=V_4\\). Then",
+          "options": [
+            "\\(\\sum_{i=1}^4(-1)^i\\dim V_i=0\\)",
+            "\\(\\sum_{i=2}^4(-1)^i\\dim V_i>0\\)",
+            "\\(\\sum_{i=1}^4(-1)^i\\dim V_i<0\\)",
+            "\\(\\sum_{i=1}^4(-1)^i\\dim V_i\\ne0\\)"
+          ],
+          "correct_answer": [0, 1],
+          "positive_marks": 4.75,
           "negative_marks": 0
         }
-
       ]
     }
   ]
