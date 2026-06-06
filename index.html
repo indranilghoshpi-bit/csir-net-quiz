@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSIR-NET Portal Login</title>
+</head>
+<body>
+
+<h2>CSIR-NET Mock Test Portal</h2>
+
+<input id="username" placeholder="User ID">
+<br><br>
+
+<input id="password" type="password" placeholder="Password">
+<br><br>
+
+<button onclick="login()">Login</button>
+
+<script>
+
+function login() {
+
+    const username =
+        document.getElementById("username").value;
+
+    const password =
+        document.getElementById("password").value;
+
+    if (
+        username === "indranil" &&
+        password === "csirnet"
+    ) {
+
+        localStorage.setItem(
+            "loggedIn",
+            "true"
+        );
+
+        window.location.href =
+            "home.html";
+
+    }
+    else {
+
+        alert(
+            "Invalid User ID or Password"
+        );
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
