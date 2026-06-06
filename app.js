@@ -66,7 +66,11 @@ async function loadExam() {
 
         const response = await fetch(testFile);
 
-        testData = await response.json();
+if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+}
+
+testData = await response.json();
 
         document.title = testData.test_name;
 
