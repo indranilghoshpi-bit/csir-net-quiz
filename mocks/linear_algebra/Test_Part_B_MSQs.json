@@ -1,0 +1,222 @@
+{
+  "test_name": "Linear Algebra Practice Test - Part B",
+  "duration_minutes": 60,
+  "total_marks": 60,
+  "sections": [
+    {
+      "name": "Part B",
+      "questions": [
+        {
+          "id": 16,
+          "type": "multiple",
+          "text": "Let $A$ be a real $n \\times n$ orthogonal matrix, that is, $A^tA = AA^t = I_n$, the $n \\times n$ identity matrix. Which of the following statements are necessarily true?",
+          "options": [
+            "$\\langle Ax, Ay \\rangle = \\langle x, y \\rangle \\forall x, y \\in \\mathbb{R}^n$",
+            "All eigenvalues of $A$ are either +1 or -1",
+            "The rows of $A$ form an orthonormal basis of $\\mathbb{R}^n$",
+            "$A$ is diagonalizable over $\\mathbb{R}$"
+          ],
+          "correct_answer": [0, 2],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 17,
+          "type": "multiple",
+          "text": "Which of the following matrices have Jordan canonical form equal to $\\begin{pmatrix}0&1&0\\\\0&0&0\\\\0&0&0\\end{pmatrix}$?",
+          "options": [
+            "$\\begin{pmatrix}0&0&1\\\\0&0&0\\\\0&0&0\\end{pmatrix}$",
+            "$\\begin{pmatrix}0&0&1\\\\0&0&1\\\\0&0&0\\end{pmatrix}$",
+            "$\\begin{pmatrix}0&1&1\\\\0&0&0\\\\0&0&0\\end{pmatrix}$",
+            "$\\begin{pmatrix}0&1&1\\\\0&0&1\\\\0&0&0\\end{pmatrix}$"
+          ],
+          "correct_answer": [0, 1, 2],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 18,
+          "type": "multiple",
+          "text": "Let $A$ be a $3 \\times 4$ and $b$ be a $3 \\times 1$ matrix with integer entries. Suppose that the system $Ax = b$ has a complex solution. Then",
+          "options": [
+            "$Ax = b$ has an integer solution",
+            "$Ax = b$ has a rational solution",
+            "The set of real solutions to $Ax = 0$ has a basis consisting of rational solutions",
+            "If $b \\ne 0$, then $A$ has positive rank"
+          ],
+          "correct_answer": [1, 2, 3],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 19,
+          "type": "multiple",
+          "text": "Let $f$ be a non-zero symmetric bilinear form on $\\mathbb{R}^3$. Suppose that there exists linear transformations $T_i: \\mathbb{R}^3 \\rightarrow \\mathbb{R}$, $i=1,2$ such that for all $\\alpha, \\beta \\in \\mathbb{R}^3$, $f(\\alpha, \\beta) = T_1(\\alpha)T_2(\\beta)$. Then",
+          "options": [
+            "$\\operatorname{rank} f = 1$",
+            "$\\dim(\\{\\beta \\in \\mathbb{R}^3 : f(\\alpha, \\beta) = 0 \\text{ for all } \\alpha \\in \\mathbb{R}^3\\}) = 2$",
+            "$f$ is positive semi-definite or negative semi-definite",
+            "$\\{\\alpha : f(\\alpha, \\alpha) = 0\\}$ is a linear subspace of dimension 2"
+          ],
+          "correct_answer": [0, 1, 2, 3],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 20,
+          "type": "multiple",
+          "text": "The matrix $A = \\begin{pmatrix}5&9&8\\\\1&8&2\\\\9&1&0\\end{pmatrix}$ satisfies",
+          "options": [
+            "$A$ is invertible and the inverse has all integer entries.",
+            "$\\det(A)$ is odd.",
+            "$\\det(A)$ is divisible by 13.",
+            "$\\det(A)$ has at least two prime divisors."
+          ],
+          "correct_answer": [2, 3],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 21,
+          "type": "multiple",
+          "text": "Let $A$ be $5 \\times 5$ matrix and let $B$ be obtained by changing one element of $A$. Let $r$ and $s$ be the ranks of $A$ and $B$ respectively. Which of the following statements is/are correct?",
+          "options": [
+            "$s \\le r+1$",
+            "$r-1 \\le s$",
+            "$s = r-1$",
+            "$s \\ne r$"
+          ],
+          "correct_answer": [0, 1],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 22,
+          "type": "multiple",
+          "text": "Let $M_n(K)$ denote the space of all $n \\times n$ matrices with entries in a field $K$. Fix a non-singular matrix $A = (A_{ij}) \\in M_n(K)$, and consider the linear map $T: M_n(K) \\rightarrow M_n(K)$ given by $T(X) = AX$. Then",
+          "options": [
+            "$\\operatorname{trace}(T) = n\\sum_{i=1}^n A_{ii}$",
+            "$\\operatorname{trace}(T) = \\sum_{i=1}^n\\sum_{j=1}^n A_{ij}$",
+            "rank of $T$ is $n^2$",
+            "$T$ is non singular"
+          ],
+          "correct_answer": [0, 2, 3],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 23,
+          "type": "multiple",
+          "text": "For arbitrary subspaces $U, V$ and $W$ of a finite dimensional vector space, which of the following hold",
+          "options": [
+            "$U \\cap (V+W) \\subset U \\cap V + U \\cap W$",
+            "$U \\cap (V+W) \\supset U \\cap V + U \\cap W$",
+            "$(U \\cap V) + W \\subset (U+W) \\cap (V+W)$",
+            "$(U \\cap V) + W \\supset (U+W) \\cap (V+W)$"
+          ],
+          "correct_answer": [1, 2],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 24,
+          "type": "multiple",
+          "text": "Let $A$ be $4 \\times 7$ real matrix and $B$ be a $7 \\times 4$ real matrix such that $AB = I_4$, where $I_4$ is the $4 \\times 4$ identity matrix. Which of the following is/are always true?",
+          "options": [
+            "$\\operatorname{rank}(A) = 4$",
+            "$\\operatorname{rank}(B) = 7$",
+            "$\\operatorname{nullity}(B) = 0$",
+            "$BA = I_7$ where $I_7$ is the $7 \\times 7$ identity matrix"
+          ],
+          "correct_answer": [0, 2],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 25,
+          "type": "multiple",
+          "text": "Let $\\mathbb{R}[x]$ denote the vector space of all real polynomials. Let $D: \\mathbb{R}[x] \\rightarrow \\mathbb{R}[x]$ denote the map $Df = \\frac{df}{dx}$. Then,",
+          "options": [
+            "$D$ is one-one",
+            "$D$ is onto",
+            "There exists $E: \\mathbb{R}[x] \\rightarrow \\mathbb{R}[x]$ so that $D(E(f)) = f$, $\\forall f$.",
+            "There exists $E: \\mathbb{R}[x] \\rightarrow \\mathbb{R}[x]$ so that $E(D(f)) = f$, $\\forall f$."
+          ],
+          "correct_answer": [1, 2],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 26,
+          "type": "multiple",
+          "text": "Which of the following are eigenvalues of the matrix $\\begin{pmatrix}0&0&0&1&0&0\\\\0&0&0&0&1&0\\\\0&0&0&0&0&1\\\\1&0&0&0&0&0\\\\0&1&0&0&0&0\\\\0&0&1&0&0&0\\end{pmatrix}$?",
+          "options": [
+            "+1",
+            "-1",
+            "+i",
+            "-i"
+          ],
+          "correct_answer": [0, 1],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 27,
+          "type": "multiple",
+          "text": "Let $A = \\begin{pmatrix}x&y\\\\-y&x\\end{pmatrix}$, where $x, y \\in \\mathbb{R}$ such that $x^2+y^2=1$. Then we must have",
+          "options": [
+            "For any $n \\ge 1$, $A^n = \\begin{pmatrix}\\cos\\theta&\\sin\\theta\\\\-\\sin\\theta&\\cos\\theta\\end{pmatrix}$ where $x = \\cos(\\theta/n)$, $y = \\sin(\\theta/n)$",
+            "$\\operatorname{tr}(A) \\ne 0$",
+            "$A^t = A^{-1}$",
+            "$A$ is similar to a diagonal matrix over $\\mathbb{C}$"
+          ],
+          "correct_answer": [0, 2, 3],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 28,
+          "type": "multiple",
+          "text": "Let $F: \\mathbb{R}^n \\times \\mathbb{R}^n \\rightarrow \\mathbb{R}$ be the function $F(x,y) = \\langle Ax, y \\rangle$ where $\\langle , \\rangle$ is the standard inner product of $\\mathbb{R}^n$ and $A$ is a $n \\times n$ real matrix. Here $D$ denotes the total derivative. Which of the following statements are correct?",
+          "options": [
+            "$(DF(x,y))(u,v) = \\langle Au, y \\rangle + \\langle Ax, v \\rangle$",
+            "$(DF(x,y))(0,0) = 0$",
+            "$DF(x,y)$ may not exist for some $(x,y) \\in \\mathbb{R}^n \\times \\mathbb{R}^n$",
+            "$DF(x,y)$ does not exist at $(x,y) = (0,0)$"
+          ],
+          "correct_answer": [0, 1],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 29,
+          "type": "multiple",
+          "text": "Let $f: \\mathbb{R}^n \\rightarrow \\mathbb{R}^n$ be a continuous function such that $\\int_{\\mathbb{R}^n} |f(x)|dx < \\infty$. Let $A$ be a real $n \\times n$ invertible matrix and for $x, y \\in \\mathbb{R}^n$ let $\\langle x, y \\rangle$ denote the standard inner product in $\\mathbb{R}^n$. Then $\\int_{\\mathbb{R}^n} f(Ax)e^{i\\langle y, x \\rangle}dx =$",
+          "options": [
+            "$\\int_{\\mathbb{R}^n} f(x)e^{i\\langle (A^{-1})^Ty, x \\rangle}\\frac{dx}{|\\det A|}$",
+            "$\\int_{\\mathbb{R}^n} f(x)e^{i\\langle A^Ty, x \\rangle}\\frac{dx}{|\\det A|}$",
+            "$\\int_{\\mathbb{R}^n} f(x)e^{i\\langle (A^T)^{-1}y, x \\rangle}dx$",
+            "$\\int_{\\mathbb{R}^n} f(x)e^{i\\langle A^{-1}y, x \\rangle}\\frac{dx}{|\\det A|}$"
+          ],
+          "correct_answer": [0],
+          "positive_marks": 4,
+          "negative_marks": 1
+        },
+        {
+          "id": 30,
+          "type": "multiple",
+          "text": "Let $S$ be the set of $3 \\times 3$ real matrices $A$ with $A^TA = \\begin{pmatrix}1&0&0\\\\0&0&0\\\\0&0&0\\end{pmatrix}$. Then the set $S$ contains",
+          "options": [
+            "a nilpotent matrix.",
+            "a matrix of rank one.",
+            "a matrix of rank two.",
+            "a non-zero skew-symmetric matrix."
+          ],
+          "correct_answer": [0, 1],
+          "positive_marks": 4,
+          "negative_marks": 1
+        }
+      ]
+    }
+  ]
+}
