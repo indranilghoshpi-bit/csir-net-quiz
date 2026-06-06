@@ -1,0 +1,52 @@
+{
+  "test_name": "Linear Algebra Practice Test - Part C",
+  "duration_minutes": 30,
+  "total_marks": 25,
+  "sections": [
+    {
+      "name": "Part C",
+      "questions": [
+        {
+          "id": 1,
+          "type": "nat",
+          "text": "Let \\(A\\) be a \\(3 \\times 3\\) matrix with eigenvalues 1, -1, and 3. Let \\(B = A^2 + 2I\\), where \\(I\\) is the \\(3 \\times 3\\) identity matrix. Compute the determinant of \\(B\\).",
+          "correct_answer": 99,
+          "positive_marks": 5,
+          "negative_marks": 0
+        },
+        {
+          "id": 2,
+          "type": "nat",
+          "text": "Let \\(A\\) be a \\(5 \\times 5\\) real matrix defined by \\(A_{ij} = i + j\\) for all \\(1 \\le i, j \\le 5\\). What is the rank of the matrix \\(A\\)?",
+          "correct_answer": 2,
+          "positive_marks": 5,
+          "negative_marks": 0
+        },
+        {
+          "id": 3,
+          "type": "nat",
+          "text": "Let \\(J\\) be a \\(10 \\times 10\\) matrix where every entry is 1, and let \\(I\\) be the \\(10 \\times 10\\) identity matrix. Compute the determinant of the matrix \\(A = I + J\\).",
+          "correct_answer": 11,
+          "positive_marks": 5,
+          "negative_marks": 0
+        },
+        {
+          "id": 4,
+          "type": "nat",
+          "text": "Let \\(A\\) be a \\(4 \\times 4\\) real matrix such that \\(A^3 = I\\) but \\(A \\ne I\\). If \\(A\\) has exactly two real eigenvalues (counting multiplicities), compute the trace of \\(A\\).",
+          "correct_answer": 1,
+          "positive_marks": 5,
+          "negative_marks": 0
+        },
+        {
+          "id": 5,
+          "type": "nat",
+          "text": "Consider the vector space \\(V\\) of all real polynomials of degree at most 3. Let \\(T: V \\to V\\) be the linear transformation defined by \\(T(p(x)) = x p'(x) + p''(x)\\). What is the trace of the matrix representation of \\(T\\) with respect to any basis of \\(V\\)?",
+          "correct_answer": 6,
+          "positive_marks": 5,
+          "negative_marks": 0
+        }
+      ]
+    }
+  ]
+}
