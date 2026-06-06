@@ -1767,13 +1767,13 @@ function renderReviewMode() {
 
                 `;
 
-                container.appendChild(
-                    div
-                );
+                               container.appendChild(div);
 
-            }
-        );
-// Re-render MathJax in review page
+            });
+
+    });
+
+    // Re-render MathJax in review page
     if (window.MathJax) {
         MathJax.typesetPromise();
     }
