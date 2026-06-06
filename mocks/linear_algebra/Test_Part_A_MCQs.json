@@ -1,0 +1,222 @@
+{
+  "test_name": "Linear Algebra Practice Test - Part A",
+  "duration_minutes": 60,
+  "total_marks": 30,
+  "sections": [
+    {
+      "name": "Part A",
+      "questions": [
+        {
+          "id": 1,
+          "type": "single",
+          "text": "Let $A, B$ be $n \\times n$ matrices such that $BA + B^2 = I - BA^2$, where $I$ is the $n \\times n$ identity matrix. Which of the following is always true?",
+          "options": [
+            "$A$ is nonsingular",
+            "$B$ is nonsingular",
+            "$A+B$ is nonsingular",
+            "$AB$ is nonsingular"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 2,
+          "type": "single",
+          "text": "Which of the following matrices has the same row space as the matrix $\\begin{pmatrix}4&8&4\\\\3&6&1\\\\2&4&0\\end{pmatrix}$?",
+          "options": [
+            "$\\begin{pmatrix}1&2&0\\\\0&0&1\\end{pmatrix}$",
+            "$\\begin{pmatrix}1&1&0\\\\0&0&1\\end{pmatrix}$",
+            "$\\begin{pmatrix}0&1&0\\\\0&0&1\\end{pmatrix}$",
+            "$\\begin{pmatrix}1&0&0\\\\0&1&0\\end{pmatrix}$"
+          ],
+          "correct_answer": 0,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 3,
+          "type": "single",
+          "text": "The determinant of the $n \\times n$ permutation matrix $P$ where $P_{i, n+1-i} = 1$ and $0$ otherwise is",
+          "options": [
+            "$(-1)^n$",
+            "$(-1)^{\\lfloor n/2 \\rfloor}$",
+            "-1",
+            "1"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 4,
+          "type": "single",
+          "text": "The determinant $\\det\\begin{pmatrix}1&1+x&1+x+x^2\\\\1&1+y&1+y+y^2\\\\1&1+z&1+z+z^2\\end{pmatrix}$ is equal to",
+          "options": [
+            "$(z-y)(z-x)(y-x)$",
+            "$(x-y)(x-z)(y-z)$",
+            "$(x-y)^2(y-z)^2(z-x)^2$",
+            "$(x^2-y^2)(y^2-z^2)(z^2-x^2)$"
+          ],
+          "correct_answer": 0,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 5,
+          "type": "single",
+          "text": "Which of the following matrices is not diagonalizable over $\\mathbb{R}$?",
+          "options": [
+            "$\\begin{pmatrix}1&1&0\\\\0&2&0\\\\0&0&1\\end{pmatrix}$",
+            "$\\begin{pmatrix}1&1&0\\\\0&1&0\\\\0&0&2\\end{pmatrix}$",
+            "$\\begin{pmatrix}1&1&0\\\\0&2&1\\\\0&0&3\\end{pmatrix}$",
+            "$\\begin{pmatrix}1&0&1\\\\0&2&0\\\\0&0&3\\end{pmatrix}$"
+          ],
+          "correct_answer": 2,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 6,
+          "type": "single",
+          "text": "Let $P$ be a $2 \\times 2$ complex matrix such that $P^*P$ is the identity matrix, where $P^*$ is the conjugate transpose of $P$. Then the eigenvalues of $P$ are",
+          "options": [
+            "real",
+            "complex conjugates of each other",
+            "reciprocals of each other",
+            "of modulus 1"
+          ],
+          "correct_answer": 3,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 7,
+          "type": "single",
+          "text": "Let $V$ be the space of twice differentiable functions on $\\mathbb{R}$ satisfying $f''-2f'+f=0$. Define $T: V \\rightarrow \\mathbb{R}^2$ by $T(f) = (f'(0), f(0))$. Then $T$ is",
+          "options": [
+            "one-to-one and onto",
+            "one-to-one but not onto",
+            "onto but not one-to-one",
+            "neither one-to-one nor onto"
+          ],
+          "correct_answer": 0,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 8,
+          "type": "single",
+          "text": "The row space of a $20 \\times 50$ matrix $A$ has dimension 13. What is the dimension of the space of solutions of $Ax = 0$?",
+          "options": [
+            "7",
+            "13",
+            "33",
+            "37"
+          ],
+          "correct_answer": 3,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 9,
+          "type": "single",
+          "text": "Let $A, B$ be $n \\times n$ matrices. Which of the following equals $\\operatorname{trace}(A^2B^2)$?",
+          "options": [
+            "$(\\operatorname{trace}(AB))^2$",
+            "$\\operatorname{trace}(AB^2A)$",
+            "$\\operatorname{trace}((AB)^2)$",
+            "$\\operatorname{trace}(BABA)$"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 10,
+          "type": "single",
+          "text": "Let $T$ be a $4 \\times 4$ real matrix such that $T^4=0$. Let $k_i = \\dim \\operatorname{Ker}(T^i)$ for $1 \\le i \\le 4$. Which of the following is NOT a possibility for the sequence $k_1 \\le k_2 \\le k_3 \\le k_4$?",
+          "options": [
+            "$3 \\le 4 \\le 4 \\le 4$",
+            "$1 \\le 3 \\le 4 \\le 4$",
+            "$2 \\le 4 \\le 4 \\le 4$",
+            "$2 \\le 3 \\le 4 \\le 4$"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 11,
+          "type": "single",
+          "text": "Which of the following is a linear transformation from $\\mathbb{R}^3$ to $\\mathbb{R}^2$?\n(a) $f\\begin{pmatrix}x\\\\y\\\\z\\end{pmatrix} = \\begin{pmatrix}4\\\\x+y\\end{pmatrix}$\n(b) $g\\begin{pmatrix}x\\\\y\\\\z\\end{pmatrix} = \\begin{pmatrix}xy\\\\x+y\\end{pmatrix}$\n(c) $h\\begin{pmatrix}x\\\\y\\\\z\\end{pmatrix} = \\begin{pmatrix}z-x\\\\x+y\\end{pmatrix}$",
+          "options": [
+            "Only f",
+            "Only g",
+            "Only h",
+            "all the transformations f, g and h"
+          ],
+          "correct_answer": 2,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 12,
+          "type": "single",
+          "text": "Let $S$ denote the set of all the prime numbers $p$ with the property that the matrix $\\begin{pmatrix}91&31&0\\\\29&31&0\\\\79&23&59\\end{pmatrix}$ has an inverse in the field $\\mathbb{Z}/p\\mathbb{Z}$. Then",
+          "options": [
+            "$S=\\{31\\}$",
+            "$S=\\{31,59\\}$",
+            "$S=\\{7,13,59\\}$",
+            "$S$ is infinite"
+          ],
+          "correct_answer": 3,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 13,
+          "type": "single",
+          "text": "For a positive integer $n$, let $P_n$ denote the vector space of polynomials in one variable $x$ with real coefficients and with degree $\\le n$. Consider the map $T: P_2 \\rightarrow P_4$ defined by $T(p(x)) = p(x^2)$. Then",
+          "options": [
+            "$T$ is a linear transformation and $\\dim \\operatorname{range}(T) = 5$",
+            "$T$ is a linear transformation and $\\dim \\operatorname{range}(T) = 3$",
+            "$T$ is a linear transformation and $\\dim \\operatorname{range}(T) = 2$",
+            "$T$ is not a linear transformation"
+          ],
+          "correct_answer": 1,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 14,
+          "type": "single",
+          "text": "Let $A$ be a real $3 \\times 4$ matrix of rank 2. Then the rank of $A^tA$, where $A^t$ denotes the transpose of $A$, is:",
+          "options": [
+            "exactly 2",
+            "exactly 3",
+            "exactly 4",
+            "at most 2 but not necessarily 2"
+          ],
+          "correct_answer": 0,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        },
+        {
+          "id": 15,
+          "type": "single",
+          "text": "Consider the quadratic form $Q(v) = v^tAv$, where $A = \\begin{pmatrix}1&0&0&0\\\\0&1&0&0\\\\0&0&0&1\\\\0&0&1&0\\end{pmatrix}$. Then",
+          "options": [
+            "$Q$ has rank 3",
+            "$xy+z^2=Q(Pv)$ for some invertible $4 \\times 4$ real matrix $P$",
+            "$xy+y^2+z^2=Q(Pv)$ for some invertible $4 \\times 4$ real matrix $P$",
+            "$x^2+y^2-zw=Q(Pv)$ for some invertible $4 \\times 4$ real matrix $P$"
+          ],
+          "correct_answer": 3,
+          "positive_marks": 2,
+          "negative_marks": 0.5
+        }
+      ]
+    }
+  ]
+}
