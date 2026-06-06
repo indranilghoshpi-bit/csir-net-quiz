@@ -72,17 +72,17 @@ async function loadExam() {
 
         sections = testData.sections;
 
-   buildQuestionList();
+buildQuestionList();
 
 initializeQuestionStatus();
+
+restoreExamState();
 
 createPalette();
 
 createSectionTabs();
 
 initializeButtons();
-
-restoreExamState();
 
 initializeTimer();
 
